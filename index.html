@@ -130,83 +130,98 @@ globalModel.pageType = 'homepage';//]]>
 <a href="{{basketUrl}}" class="button headerCartBtn" style="display: none;" rel="nofollow">{{translate 'BlokModul_SepetBlok_Sepetim'}}</a>
 <a href="javascript:window.mem.init.bind('login','{{orderCompleteUrl}}');" class="button headerOrderBtn" style="display: none;" rel="nofollow">{{translate 'Sepet_AlisverisiTamamla'}}</a></script>
 <div id="header" class="homeHeader">
-<div class="headerContent">
-<div id="logo">
-<a href="/"><img alt src="https://static.ticimax.cloud/34482/uploads/editoruploads/bayramogluweb.png" /></a>
-<div class="hText"><a href="https://www.bayramoglushoes.com/hakkimizda">Hakkımızda </a><a href="/iletisim.aspx"> İletişim</a></div>
-</div>
-<div class="welcome" id="divMemberPanel">
-<div class="memberWelcomeContent" id="divMemberWelcomeContent">
-</div>
-</div>
-<div class="usernav">
-<ul>
-<li><a href="/">Anasayfa</a></li>
-<li><a href="/Iletisim">İletişim</a></li>
-</ul>
-</div>
-<div id="divHeaderCart" class="mycart">
-<a href="/Sepetim" rel="nofollow">
-<span class="sepetTecxt">Sepetim</span>
-<span id="spnTopSepetToplamUrun" class="sepetUrunSayisi"></span>
-<span class="sepetUrun">Ürün</span>
-<span id="spnTopSepetToplamTutar" class="sepetTopTutar" style="display: none;"></span>
-</a>
-</div>
-<div id="divTopProductSearch" class="searchContent ">
-<div class="search" id="divArama">
-<button class="ButtonMic" id="start_button" type="button" onclick="return startButton(event);" style="display: inline-block; cursor: pointer;">
-<img alt="Start" id="start_img" src="/Scripts/speech/mic.gif" width="32">
-</button>
-<input name="ctl00$YeniHeader$txtbxArama" type="text" id="txtbxArama" tabindex="-1" onkeypress="return ProductSeachTopOnKeyPress(event)" class="urunSearchAC rsbInput ticimaxSearchInput" autocomplete="off" inputmode="search" placeholder="Arama" />
-<input type="button" name onclick="ProductSearchTop()" tici-lang-value="BlokModul_UrunArama_Ara" tici-lang-title="BlokModul_UrunArama_Ara" id="btnKelimeAra" class="rsbButton" />
-</div>
-</div>
-<div class="yanResimliMenu">
-<a class="tumKategorilerClick"></a>
-<div class="yanResimliMenuContent">
-<div>
-<div>
-<div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="navigation">
-<div>
-<div id="divUcTopMenu">
-<ul class="HeaderMenu2 navUl" id="HeaderMenu2"><li><a href="/markalar" target="_self" title="MARKALAR">MARKALAR</a></li>
-<li><a href="/kadin" target="_self" title="KADIN">KADIN</a>
-<ul><li><a href="ayakkabi-2" target="_self" title="AYAKKABI">AYAKKABI</a></li>
-<li><a href="/bot-49" target="_self" title="BOT">BOT</a></li>
-<li><a href="/cizme-91" target="_self" title="ÇİZME">ÇİZME</a></li>
-<li><a href="/terlik-17" target="_self" title="TERLİK">TERLİK</a></li>
-<li><a href="/giyim-151" target="_self" title="GİYİM">GİYİM</a></li>
-</ul></li>
-<li><a href="/erkek-5" target="_self" title="ERKEK">ERKEK</a>
-<ul><li><a href="/ayakkabi-6" target="_self" title="AYAKKABI">AYAKKABI</a></li>
-<li><a href="/bot-47" target="_self" title="BOT">BOT</a></li>
-<li><a href="/sandalet-31" target="_self" title="SANDALET">SANDALET</a></li>
-<li><a href="/terlik-35" target="_self" title="TERLİK">TERLİK</a></li>
-<li><a href="/giyim-149" target="_self" title="GİYİM">GİYİM</a></li>
-</ul></li>
-<li><a href="/cocuk3" target="_self" title="ÇOCUK">ÇOCUK</a>
-<ul><li><a href="/ayakkabi" target="_self" title="AYAKKABI">AYAKKABI</a></li>
-<li><a href="/bot" target="_self" title="BOT">BOT</a></li>
-<li><a href="/cizme" target="_self" title="ÇİZME">ÇİZME</a></li>
-<li><a href="/terlik" target="_self" title="TERLİK">TERLİK</a></li>
-<li><a href="/cocuk2" target="_self" title="GİYİM">GİYİM</a></li>
-</ul></li>
-<li><a href="/canta" target="_self" title="ÇANTA">ÇANTA</a></li>
-<li><a href="/aksesuar1" target="_self" title="AKSESUAR">AKSESUAR</a>
-<ul><li><a href="/sapkalar" target="_self" title="ŞAPKA">ŞAPKA</a></li>
-</ul></li>
-<li><a href="/indirim" target="_self" title="İNDİRİM">İNDİRİM</a></li>
-<li><a href="/magazalar" target="_self" title="MAĞAZALAR">MAĞAZALAR</a></li>
-</ul>
-<div class="TempMenu">
-<div></div>
+    <div class="headerContent">
+        <div id="logo">
+            <a href="/"><img alt src="https://static.ticimax.cloud/34482/uploads/editoruploads/bayramogluweb.png" /></a>
+            <div class="hText">
+                <a href="https://www.bayramoglushoes.com/hakkimizda">Hakkımızda </a>
+                <a href="/iletisim.aspx"> İletişim</a>
+            </div>
+        </div>
+        <div class="welcome" id="divMemberPanel">
+            <div class="memberWelcomeContent" id="divMemberWelcomeContent"></div>
+        </div>
+        <div class="usernav">
+            <ul>
+                <li><a href="/">Anasayfa</a></li>
+                <li><a href="/Iletisim">İletişim</a></li>
+            </ul>
+        </div>
+        <div id="divHeaderCart" class="mycart">
+            <a href="/Sepetim" rel="nofollow">
+                <span class="sepetTecxt">Sepetim</span>
+                <span id="spnTopSepetToplamUrun" class="sepetUrunSayisi"></span>
+                <span class="sepetUrun">Ürün</span>
+                <span id="spnTopSepetToplamTutar" class="sepetTopTutar" style="display: none;"></span>
+            </a>
+        </div>
+        <div id="divTopProductSearch" class="searchContent ">
+            <div class="search" id="divArama">
+                <button class="ButtonMic" id="start_button" type="button" onclick="return startButton(event);" style="display: inline-block; cursor: pointer;">
+                    <img alt="Start" id="start_img" src="/Scripts/speech/mic.gif" width="32">
+                </button>
+                <input name="ctl00$YeniHeader$txtbxArama" type="text" id="txtbxArama" tabindex="-1" onkeypress="return ProductSeachTopOnKeyPress(event)" class="urunSearchAC rsbInput ticimaxSearchInput" autocomplete="off" inputmode="search" placeholder="Arama" />
+                <input type="button" name onclick="ProductSearchTop()" tici-lang-value="BlokModul_UrunArama_Ara" tici-lang-title="BlokModul_UrunArama_Ara" id="btnKelimeAra" class="rsbButton" />
+            </div>
+        </div>
+        <div class="yanResimliMenu">
+            <a class="tumKategorilerClick"></a>
+            <div class="yanResimliMenuContent">
+                <div>
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <div>
+                <div id="divUcTopMenu">
+                    <ul class="HeaderMenu2 navUl" id="HeaderMenu2">
+                        <li><a href="/markalar" target="_self" title="MARKALAR">MARKALAR</a></li>
+                        <li><a href="/kadin" target="_self" title="KADIN">KADIN</a>
+                            <ul>
+                                <li><a href="ayakkabi-2" target="_self" title="AYAKKABI">AYAKKABI</a></li>
+                                <li><a href="/bot-49" target="_self" title="BOT">BOT</a></li>
+                                <li><a href="/cizme-91" target="_self" title="ÇİZME">ÇİZME</a></li>
+                                <li><a href="/terlik-17" target="_self" title="TERLİK">TERLİK</a></li>
+                                <li><a href="/giyim-151" target="_self" title="GİYİM">GİYİM</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/erkek-5" target="_self" title="ERKEK">ERKEK</a>
+                            <ul>
+                                <li><a href="/ayakkabi-6" target="_self" title="AYAKKABI">AYAKKABI</a></li>
+                                <li><a href="/bot-47" target="_self" title="BOT">BOT</a></li>
+                                <li><a href="/sandalet-31" target="_self" title="SANDALET">SANDALET</a></li>
+                                <li><a href="/terlik-35" target="_self" title="TERLİK">TERLİK</a></li>
+                                <li><a href="/giyim-149" target="_self" title="GİYİM">GİYİM</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/cocuk3" target="_self" title="ÇOCUK">ÇOCUK</a>
+                            <ul>
+                                <li><a href="/ayakkabi" target="_self" title="AYAKKABI">AYAKKABI</a></li>
+                                <li><a href="/bot" target="_self" title="BOT">BOT</a></li>
+                                <li><a href="/cizme" target="_self" title="ÇİZME">ÇİZME</a></li>
+                                <li><a href="/terlik" target="_self" title="TERLİK">TERLİK</a></li>
+                                <li><a href="/cocuk2" target="_self" title="GİYİM">GİYİM</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/canta" target="_self" title="ÇANTA">ÇANTA</a></li>
+                        <li><a href="/aksesuar1" target="_self" title="AKSESUAR">AKSESUAR</a>
+                            <ul>
+                                <li><a href="/sapkalar" target="_self" title="ŞAPKA">ŞAPKA</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/indirim" target="_self" title="İNDİRİM" class="indirim">İNDİRİM</a></li>
+                        <li><a href="/magazalar" target="_self" title="MAĞAZALAR">MAĞAZALAR</a></li>
+                    </ul>
+                    <div class="TempMenu">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script>
     function menuImageLoad() {
