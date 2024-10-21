@@ -155,7 +155,8 @@ select { height: 40px; padding: 0 17px 0 10px; line-height: 30px; border: 1px so
     white-space: nowrap; /* Metnin aynı satırda kalmasını sağlar */
     animation: marquee 10s linear infinite; /* Kayma animasyonu */
 }
-
+.indirim {
+    color: red;
 @keyframes marquee {
     from {
         transform: translateX(100%); /* Başlangıç konumu */
