@@ -140,6 +140,15 @@ select { height: 40px; padding: 0 17px 0 10px; line-height: 30px; border: 1px so
 .Listem.HediyeKuponlarim .ListemItem .line4 { width: 16%; padding-left: 1%; }
 .Listem.HediyeKuponlarim .ListemItem .line5 { width: 20%; padding-left: 1%; }
 /* ================================================== */ /* SİPARİŞLERİM */ /* ================================================== */
+.top-strip {
+  width: 100%;             
+  height: 5px;            
+  background-color: #ff0000;  
+  position: fixed;         
+  top: 0;                  
+  left: 0;
+  z-index: 1000;           
+}
 .Siparislerim { margin-bottom: 10px; }
 .Siparislerim .Title div { font-weight: 700; font-size: 13px; }
 .Siparislerim .ListemItem.Title div { padding: 0; height: auto; }
