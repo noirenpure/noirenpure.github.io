@@ -63,7 +63,21 @@ function blockCompleteCallback() {
 
     }
 }
+let lastScrollTop = 0;
+const topStrip = document.querySelector('.top-strip');
 
+window.addEventListener('scroll', function() {
+    let st = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (st > lastScrollTop) {
+        // Aşağı kaydırma durumunda
+        topStrip.style.top = '-30px'; // Şeridi yukarı kaydır
+    } else {
+        // Yukarı kaydırma durumunda
+        topStrip.style.top = '0'; // Şeridi geri getir
+    }
+    lastScrollTop = st <= 0 ? 0 : st; // Sayfanın üst kısmını kontrol et
+});
 function urunDuzeni(tip) {
     $('.sort_hrz').removeClass("Active");
     $('.sort_3').removeClass("Active");
