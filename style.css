@@ -1795,7 +1795,19 @@ body #header .stories.carousel .story > .item-link > .info{display:none;}
     #ticimaxCopyright { margin-bottom: 50px !important; }
     #divTicimaxCopyrightContent { float: left; width: 100%; }
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.homeHeader {
+    background-color: #fff; /* Header arka plan rengi */
+    position: fixed; /* Sabit pozisyon */
+    top: 0; /* Üstte sabit kalması için */
+    left: 0;
+    width: 100%; /* Tam genişlik */
+    z-index: 1000; /* Diğer içeriklerin üstünde görünmesi için */
 
 .ozelAlan1, .ozelAlan2, .ozelAlan3, #divOzelAlan1, #divOzelAlan2, #divOzelAlan3 {display: none; }
 .ozelAlan4 {position: absolute; top: 10px; right: 10px; z-index: 99; }
