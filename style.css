@@ -150,20 +150,28 @@ select { height: 40px; padding: 0 17px 0 10px; line-height: 30px; border: 1px so
   z-index: 1000;           
   overflow: hidden; /* Taşan içeriği gizle */
 }
-
 .marquee {
-    white-space: nowrap; /* Metnin aynı satırda kalmasını sağlar */
-    animation: marquee 10s linear infinite; /* Kayma animasyonu */
+    background-color: #f0f0f0; /* Şeridin arka plan rengi (isteğe bağlı) */
+    overflow: hidden; /* Taşmayı gizlemek için */
+    white-space: nowrap; /* Tek satırda yazıyı tutmak için */
+    position: fixed; /* Sayfanın üstünde sabit kalması için */
+    top: 0; /* Üstte sabit kalması için */
+    width: 100%; /* Tam genişlik */
+    z-index: 999; /* Diğer içeriklerin üstünde görünmesi için */
 }
-.indirim {
-    color: red;
+
+.marquee p {
+    display: inline-block;
+    padding: 10px 0; /* İç boşluk */
+    color: black; /* Yazı rengi siyah */
+    font-size: 15px; /* Yazı boyutu */
+    animation: marquee 15s linear infinite; /* Kayan yazı animasyonu */
+}
+
+/* Kayan yazı animasyonu */
 @keyframes marquee {
-    from {
-        transform: translateX(100%); /* Başlangıç konumu */
-    }
-    to {
-        transform: translateX(-100%); /* Bitiş konumu */
-    }
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
 }
 .Siparislerim { margin-bottom: 10px; }
 .Siparislerim .Title div { font-weight: 700; font-size: 13px; }
